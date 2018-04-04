@@ -5,3 +5,6 @@ services:
   
 before_install:
   - docker build -t gkarthics/gitlab-python3-alphine3 .
+
+script:
+  -  ./build.sh
