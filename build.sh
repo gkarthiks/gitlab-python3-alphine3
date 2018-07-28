@@ -10,9 +10,9 @@ DOCKER_PASSWORD=${DOCKER_PASSWORD}
 VERSION=$TRAVIS_JOB_NUMBER
 REVISION=$TRAVIS_COMMIT
 
-docker build -f Dockerfile $REPO .
+docker build -f Dockerfile $REPO:1.$VERSION .
 # docker tag $REPO:$REVISION $REPO:latest
-docker tag $REPO:$REVISION $REPO:1.$VERSION
+# docker tag $REPO:$REVISION $REPO:1.$VERSION
 
 # docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
