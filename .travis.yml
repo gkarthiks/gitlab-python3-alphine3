@@ -1,11 +1,11 @@
 sudo: required
-
 services:
-  - docker
-  
+- docker
 before_install:
-  - chmod +x build.sh
-  - docker build -t gkarthics/gitlab-python3-alphine3 .
-
+- chmod +x build.sh
+- docker build -t gkarthics/gitlab-python3-alphine3 .
 script:
-  -  ./build.sh
+- "./build.sh"
+env:
+  global:
+    secure: uUyMVaSPwyGRAFCRUnNo4N3rrEdxMaCFkj4oSxZ0ujkwXgNYUP9gDbmCDbJCtqcO2uJv9rPWK81biJc8A+Cdh62efGYC7whGc5EPT96WlMdbcU+ujSNfeoZ+1kUIngJY5p1s+lAdV6efHvXwUvwdnLd/cJaD9uMrsqAYb841FCBfTDdKYCDPJv4VoQsoniqo6h8oB1qw8Pm22QBemnA+npexSwvbOVxxaJVthLSL87DWCP5T8brc/gtA+/si5tYFPryvHrAFHotcVL8wQksrr63T+fJ1t5qXxX+ZGuWBU1RZhgqJxeTxu4eaMVE7b5V6i+iPTkVpUMd2bCkuLj0a6xCjmv7tKL1Tljy1cIyMdRX2m3EYo2A26AkDAqhxba0LWa4DANh4jyNvPfjty2hrFCUUOMIQ6vgYquvveNwqT/4bS4kh9j8laYK7zlrH3YqDBK1VwPSp4j7uduYGw66JENtjgBGkrl3uUWd22NyNOfYCCvW1ieej4F+pqPtNavfELUMdvlxz73ZNajbz8YOetj1FxPoctpf7HVmXKp7xgy3hcwF51grkpe1lcgClfGRLl5mgCxc/s5yRfwG0JrvMaRwx9oYJj+vX9nbOW8UuDNY/EU6XesY0RYiV0LuZAydEOXmAR8haMed0w7dnZaJG3uupKODGK/g+hc7sy/UYyxk=
